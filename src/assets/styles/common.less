@@ -1,0 +1,272 @@
+* {
+  padding: 9;
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #1b1b1b;
+}
+
+.view-area-width {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.btn-common {
+  &:hover {
+    background: linear-gradient(0deg, rgba(158, 134, 12, 1), rgba(163, 139, 24, 1));
+  }
+  cursor: pointer;
+  margin-top: 12px;
+  width: 91px;
+  height: 30px;
+  font-size: 0.14rem;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  background: linear-gradient(0deg, rgba(53, 45, 6, 1), rgba(94, 80, 14, 1));
+  border: 1px solid rgba(113, 96, 16, 1);
+  border-radius: 15px;
+}
+
+.ivu-modal-content {
+  border: 10px solid #ddd;
+  border-image: linear-gradient(#ffec7c, #76570d, #fff2a0) 50 50;
+  .ivu-icon {
+    display: none;
+  }
+
+  .ivu-modal-confirm-body {
+    padding-top: 10px;
+    padding-left: 12px;
+  }
+
+  .ivu-btn-primary {
+    background: #76570d;
+    border: none;
+    &:hover {
+      background: #76570d;
+      opacity: 0.8;
+      color: #fff;
+    }
+  }
+
+  .ivu-btn-text {
+    outline: none;
+    &:hover {
+      color: #76570d;
+    }
+  }
+}
+
+.vue-loading {
+  margin: 0 10px !important;
+}
+
+li {
+  list-style: none;
+}
+
+.message-fade-enter,
+.message-fade-leave-active {
+  opacity: 0;
+}
+
+.user-center-main-area {
+  width: 842px;
+  min-height: 644px;
+  background: #212121;
+  border: 1px solid rgba(43, 42, 42, 1);
+  border-radius: 4px;
+  padding: 25px;
+
+  .title {
+    font-size: 16px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+.ivu-select-selection {
+  background-color: #1b1b1b;
+  border: 1px solid rgba(48, 48, 48, 1);
+  &:hover {
+    border-color: #fff;
+  }
+
+  .ivu-select-selected-value {
+    color: #fff;
+  }
+}
+
+.ivu-select-dropdown {
+  background: #333333;
+}
+
+.ivu-input {
+  // height: 40px;
+  background: rgba(27, 27, 27, 1);
+  border: 1px solid rgba(48, 48, 48, 1);
+  box-shadow: 0px 1px 0px 0px rgba(26, 26, 26, 1);
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  &:focus {
+    border-color: #fff;
+  }
+  &:hover {
+    border-color: #fff;
+  }
+}
+
+.ivu-form .ivu-form-item-label {
+  color: #fff;
+}
+
+
+.ivu-input-number {
+  background: rgba(27, 27, 27, 1);
+  border: 1px solid rgba(48, 48, 48, 1);
+  box-shadow: 0px 1px 0px 0px rgba(26, 26, 26, 1);
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  &:hover{
+    border-color: #fff;
+  }
+  .ivu-input-number-input{
+    background: rgba(27, 27, 27, 1);
+    color: #fff;
+  }
+}
+// 表格
+.ivu-table,.ivu-table:after,.ivu-table::before,.ivu-table-wrapper{
+  background-color:#2B2A2A;
+}
+
+// .ivu-table:after
+/*外层table的border*/
+.ivu-table-wrapper{
+  border:none!important;
+}
+.ivu-table-wrapper>.ivu-spin-fix {
+  border: 0px 
+}
+.ivu-spin-fix{
+  background-color: rgba(82, 72, 72, 0.9);
+}
+.ivu-spin-dot {
+  background-color: #FFD3B4;
+}
+.ivu-table-header thead tr:first-child{
+  background:linear-gradient(180deg,rgba(51,51,51,1),rgba(0,0,0,1))!important;
+  box-shadow:0px 6px 7px 0px rgba(72,72,72,0.48)!important;
+  border-radius:4px!important;
+  overflow: hidden;
+}
+/*底色*/
+.ivu-table td{
+background-color: #2B2A2A;
+color: #fff;
+}
+/*每行的基本样式*/
+.ivu-table-row td {
+  color: #fff;
+  border:none
+}
+/*头部th*/
+.ivu-table-header th{
+  color:#FFD3B4;
+  font-weight: bold;
+  background:linear-gradient(180deg,rgba(51,51,51,1),rgba(0,0,0,1));
+box-shadow:0px 6px 7px 0px rgba(72,72,72,0.48);
+  border: none;
+}
+/*偶数行*/
+.ivu-table-stripe-even td{
+  background-color: rgba(51,51,51,1)!important;
+}
+
+/*奇数行*/
+.ivu-table-stripe-odd td{
+  background-color:#2B2A2A!important;
+}
+/*选中某一行高亮*/
+.ivu-table-row-highlight td {
+  background-color: #BA7923!important;
+}
+/*浮在某行*/
+.ivu-table-row-hover td {
+  background-color: #BA7923!important;
+}
+
+// input
+.ivu-date-picker-focused input{
+  border-color:#FFEC7C!important;
+  padding-left: 30px;
+}
+.ivu-input-suffix{
+  left: 0;
+  color: #76570D;
+}
+.ivu-input-with-suffix{
+  padding-right: 0;
+  padding-left:30px;
+}
+.ivu-date-picker-cells-focused em{
+  box-shadow: 0 0 0 1px #FFEC7C inset;
+}
+.ivu-date-picker-cells-cell-selected em, .ivu-date-picker-cells-cell-selected:hover em{
+  background:#FFEC7C;
+}
+.ivu-btn-primary{
+  background-color:#76570D;
+  border-color:#FFEC7C;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #999;
+  font-size: 14px;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #999;
+  font-size: 14px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #999;
+  font-size: 14px;
+}
+// .ivu-input{
+//   border-radius:2px;
+// }
+
+.ivu-input {
+  height: 40px;
+  background: rgba(27, 27, 27, 1);
+  border: 2px solid rgba(48, 48, 48, 1);
+  box-shadow: 0px 1px 0px 0px rgba(26, 26, 26, 1);
+  border-radius: 2px;
+}
+
+.status-success {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #67c48c;
+}
+.status-error {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #e23a3a;
+}
+  .status-ing {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #7063e6;
+}
